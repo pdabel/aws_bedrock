@@ -1,6 +1,6 @@
 resource "aws_key_pair" "ssh_key" {
     key_name   = "paul-macbook"
-    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDv7vU311oCzK8nDDlvFfrAFnNd6BGz2uJJDEW8WBrLdelPHBvHCmfZdJtuT2e+yCCzldC5tFseDhZCBY6j6qFTwkngBu+a5ZH8IHD8QvTCqLPy5PUpKqTJZYmbvCGN+1s2qSRqFrishpqn1WLn3h3Ov14MItTVrdKgapZ2W80TdeSX9wlmnKsq8eTuDSew7TGwYENv1sYGOzNgR5djSeJeqFFTB2+jH5MUlzNUetLXuGHqTNsIjuw1WR/Prwc7b90VlBB29XSX8OpT6DPeVJ/2fpqJLI3+t13WOBg5rIJkhb/hSnv8eSDpTG62mj30iUNvpIiwTjTD5oE4sUpbO7d9"
+    public_key = var.ssh_key
 }
 
 data "aws_ami" "bedrock" {
